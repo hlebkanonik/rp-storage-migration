@@ -39,7 +39,8 @@ helm repo add https://hlebkanonik.github.io/rp-storage-migration/
 ```
 helm install rpsm-multi-single -f values.yaml rp-storage-migration/rpsm-multi-single
 ```
-3. When the data has been successfully transferred, Job.butch will get the status `Completed`. Uninstall `rp-storage-migration/rpsm-multi-single`
+> ❗️ You need to wait until the end of the migration
+3. When the data has been successfully migrated, Job.butch will get the status `Completed`. Uninstall `rp-storage-migration/rpsm-multi-single`
 ```
 helm uninstall rpsm-multi-single
 ```
@@ -48,8 +49,13 @@ helm uninstall rpsm-multi-single
 ```
 helm install rpsm-s3-minio -f values.yaml rp-storage-migration/rpsm-s3-minio
 ```
+> ❗️ You don't have to wait until the end of the migration. Proceed to the next steps
 6. Switch Report Portal values to Single Bucket `minio.foo=bar` (the link will be there after release 23.2).
 7. Install Report Portal Helm chart with new Single Bucket values 
 ```
 helm install my-release
+```
+8. When the data has been successfully migrated, Job.butch will get the status `Completed`. Uninstall `rp-storage-migration/rpsm-multi-single`
+```
+helm uninstall rpsm-s3-minio
 ```
