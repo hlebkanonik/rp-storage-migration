@@ -3,8 +3,8 @@ entries:
   rpsm-multi-single:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-06-05T18:19:56.024755+02:00"
-    description: A Helm chart for Kubernetes
+    created: "2023-06-06T11:38:27.156012+02:00"
+    description: Report Portal storage migration from multiple buckets to single bucket for S3 and MinIO
     digest: 5c52ee36e9784e2df88da8e03dabd80129503de61ca6bc41dab7e772c7d43a7d
     name: rpsm-multi-single
     type: application
@@ -14,7 +14,7 @@ entries:
   rpsm-s3-minio:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-06-05T18:19:56.025509+02:00"
+    created: "2023-06-06T11:38:27.158477+02:00"
     description: Report Portal storage migration from single bucket MinIO to single
       bucket S3
     digest: 3903a5eb6a4aa0438a48ebf2320b5123e54d3c54bbe1b5c6eb205555c612a2df
@@ -23,4 +23,4 @@ entries:
     urls:
     - https://hlebkanonik.github.io/rp-storage-migration/rpsm-s3-minio-0.1.0.tgz
     version: 0.1.0
-generated: "2023-06-05T18:19:56.021119+02:00"
+generated: "2023-06-06T11:38:27.151967+02:00"
