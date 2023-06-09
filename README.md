@@ -1,5 +1,7 @@
 # Report Portal storage migration
+
 Report Portal storage migration:
+
 1. From multiple buckets to single bucket for S3 and MinIO.
 2. From single bucket MinIO to single bucket S3.
 
