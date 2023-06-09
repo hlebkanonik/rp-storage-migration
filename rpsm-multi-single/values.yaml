@@ -1,7 +1,7 @@
 image:
-  repository: reportportal/complex-migrations
+  repository: public.ecr.aws/v8s8f8g2/complex-migration
   pullPolicy: IfNotPresent
-  tag: "1.0.0"
+  tag: "rpsm-multi-single-0.1.0-DEV"
 imagePullSecrets: []
 
 nameOverride: ""
